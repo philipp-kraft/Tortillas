@@ -62,7 +62,7 @@ def build_footer():
 def main(filename):
     # Register all tests
     test_folder_path = r"userspace/tests/"
-    test_files = list(pathlib.Path(test_folder_path).glob(f"test_*.c"))
+    test_files = list(pathlib.Path(test_folder_path).glob(f"**/test_*.c"))
 
     print("Starting Salsa!")
     print("Files to analyze:")
